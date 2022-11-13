@@ -9,6 +9,10 @@ string encod(){
    getline(cin ,sUserInput);
    lenght_sInput = sInput.length();
    lenght_sUserInput= sUserInput.length();
+   
+   // Եթե i֊ն for-ի սահմաններից դուրս ոչ մի տեղ պետք չի գալու, էդ դեպքում
+   // i-ն կարելի ա հենց for֊ի մեջ հայտարարել։ Ու խոսքը հենց i-ի մասին չի
+   // այլ նաև ցանկացած այլ փոփոխականի
    for (;i < lenght_sUserInput; i++){
         for (int j =0; j < lenght_sInput ;j++)
             if (sUserInput[i]== sInput[j] && sUserInput[i] == sInput[lenght_sInput-26]){
